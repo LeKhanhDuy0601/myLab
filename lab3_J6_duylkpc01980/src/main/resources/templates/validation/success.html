@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" th:replace="~{/layout/layout :: dynamic(~{::body})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Kết Quả</h3>
+<ul th:object="${student}">
+	<li>Họ và tên: <i th:text="*{fullName}"></i> </li>
+	<li>Email: <i th:text="*{email}"></i> </li>
+	<li>Giới tính: <i th:text="*{gender}?'Nam':'Nữ'"></i> </li>
+	<li>Quốc tịch: <i th:text="*{country}?'VIỆT NAM':'TRUNG QUỐC'"></i> </li>
+	<li>Điểm: <i th:text="*{marks}"></i> </li>
+</ul>
+</body>
+</html>

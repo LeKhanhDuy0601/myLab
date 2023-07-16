@@ -1,0 +1,14 @@
+{
+	"name": "Khanh Duy",
+	"gender": true,
+	"marks": 10,
+	"contact": {
+		"email": "duylkpc01980@fpt.edu.vn",
+		"phone": "035468469",
+		"address": "My xuyen, Soc Trang"
+	},
+	"subjects": [
+		"JAVA",
+		"php"
+	]
+}

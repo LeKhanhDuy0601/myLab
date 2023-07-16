@@ -1,0 +1,16 @@
+<nav xmlns="http://www.thymeleaf.org">
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" th:href="@{/home/index}" th:text="#{menu.home}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/home/about}" th:text="#{menu.about}">about</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" th:href="@{/home/contact}"th:text="#{menu.contact}">Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " th:href="@{/home/feedback}"th:text="#{menu.feedback}">Feedback</a>
+  </li>
+</ul>
+</nav>

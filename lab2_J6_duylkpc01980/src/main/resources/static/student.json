@@ -1,0 +1,14 @@
+{
+	"name": "Le Khanh Duy",
+	"gender": true,
+	"marks": 7.5,
+	"contact": {
+		"email": "Duylkpc01980@fpt.edu.vn",
+		"phone": "03543109384",
+		"address": "My xuyen, Soc Trang"
+	},
+	"subjects": [
+		"WEB205",
+		"COM108"
+	]
+}

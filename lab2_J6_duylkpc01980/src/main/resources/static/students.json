@@ -1,0 +1,63 @@
+[
+{
+    "name": "lão hạc",
+    "gender": true,
+    "marks": 0.0,
+    "contact": {
+      "email": "HacL@gmail.com",
+      "phone": "0913745789"
+    },
+    "subjects": []
+  },
+  {
+    "name": "chí phèo",
+    "gender": true,
+    "marks": 7.5,
+    "contact": {
+      "email": "PheoC@gmail.com",
+      "phone": "0913745789"
+    },
+    "subjects": ["WEB207", "COM108"]
+  },
+  {
+    "name": "thị nở",
+    "gender": false,
+    "marks": 5.5,
+    "contact": {
+      "email": "NoT@gmail.com",
+      "phone": "0913745789"
+    },
+    "subjects": ["WEB206", "COM108"]
+  },
+  {
+    "name": "kim trọng",
+    "gender": true,
+    "marks": 9.5,
+    "contact": {
+      "email": "TrongK@gmail.com",
+      "phone": "0913745789",
+      "address": "77B/B1 Nguyễn Kiệm, F.4, Q.Phú Nhuận"
+    },
+    "subjects": ["WEB203"]
+  },
+  {
+    "name": "thuý kiều",
+    "gender": false,
+    "marks": 6.5,
+    "contact": {
+      "email": "KieuT@gmail.com",
+      "phone": "0913745789"
+    },
+    "subjects": ["WEB208", "COM108"]
+  },
+  {
+    "name": "thuý vân",
+    "gender": false,
+    "marks": 8.0,
+    "contact": {
+      "email": "VanT@gmail.com",
+      "phone": "0913745789"
+    },
+    "subjects": ["WEB205", "COM108"]
+  }
+]

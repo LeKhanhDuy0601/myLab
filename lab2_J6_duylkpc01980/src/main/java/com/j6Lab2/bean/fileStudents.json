@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Le Khanh Duy",
+		"gender": true,
+		"marks": 7.5,
+		"email": "Duylkpc01980@fpt.edu.vn"
+	},
+	{
+		"name": "Nguyen Van A",
+		"gender": true,
+		"marks": 5.5,
+		"email": "a@fpt.edu.vn"
+	},
+	{
+		"name": "Nguyen Thi B",
+		"gender": false,
+		"marks": 9.5,
+		"email": "b@fpt.edu.vn"
+	},
+	{
+		"name": "Nguyen Van c",
+		"gender": false,
+		"marks": 4.0,
+		"email": "a@fpt.edu.vn"
+	}
+]

@@ -1,0 +1,14 @@
+{
+	"gender": true,
+	"contact": {
+		"address": "My xuyen, Soc Trang",
+		"phone": "035468469",
+		"email": "duylkpc01980@fpt.edu.vn"
+	},
+	"subjects": [
+		"Web205",
+		"COM108"
+	],
+	"name": "Khanh Duy",
+	"marks": 10
+}

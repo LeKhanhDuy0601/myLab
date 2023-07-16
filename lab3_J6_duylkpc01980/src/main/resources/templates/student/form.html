@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" th:replace="~{/layout/layout :: dynamic(~{::body})}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Phiếu Điền Thông Tin Sinh Viên</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="container">
+	<p class="text-center"><b>Phiếu Điền Thông Tin Sinh Viên</b></p>
+	<form class="row g-3 needs-validation" action="/student/save" method="post" th:object="${student}">
+		<div class="col-md-4">
+			<label for="email" class="form-label">Email</label>
+			<input class="form-control" id="email" value="duylkpc01980@fpt.edu.vn" th:field="*{email}">
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<div class="col-md-4">
+			<label for="fullname" class="form-label">Họ và tên</label>
+			<input type="text" class="form-control" id="fullname" value="Lê Khánh Duy" th:field="*{fullName}" required>
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<div class="col-md-4">
+			<label for="marks" class="form-label">Điểm</label>
+			<input type="text" class="form-control" id="marks" value="10" th:field="*{marks}" required>
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<!--Radio -->
+
+		<label for="gender" class="form-label">Giới Tính</label>
+		<div class="form-check form-check-inline">
+			<input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked1"
+				th:field="*{gender}" value="true" required>
+			<label class="form-check-label" for="validationFormCheck2">Nam</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked2"
+				th:field="*{gender}" value="false" required>
+			<label class="form-check-label" for="validationFormCheck3">Nữ</label>
+		</div>
+		<div class="col-md-3">
+			<label for="validationCustom04" class="form-label">Quốc Tịch</label>
+			<select class="form-select" id="validationCustom04" th:field="*{country}" required>
+				<option selected disabled value="">Chọn Quốc Tịch</option>
+				<option value="VN">Việt Nam</option>
+				<option value="CN">Trung Quốc</option>
+			</select>
+			<div class="invalid-feedback">
+				Please select a valid state.
+			</div>
+		</div>
+		<button>Success</button>
+	</form>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

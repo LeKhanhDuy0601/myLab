@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>WELLCOME TO THYMELEAF</h1>
+	<ul>
+		<li th:text="${mess}">
+		</li>
+		<li th:utext="${mess}"></li>
+	</ul>
+	<ul>
+		<li>[[${mess}]]</li>
+		<li>[(${mess})]</li>
+	</ul>
+</body>
+
+</html>

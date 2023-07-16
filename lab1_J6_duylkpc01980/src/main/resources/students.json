@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Le Khanh Duy",
+		"gender": true,
+		"marks": 7.5,
+		"contact": {
+			"email": "Duylkpc01980@fpt.edu.vn",
+			"phone": "03543109384",
+			"address": "My xuyen, Soc Trang"
+		},
+		"subjects": [
+			"WEB205",
+			"COM108"
+		]
+	},
+	{
+		"name": "Nguyen Van A",
+		"gender": true,
+		"marks": 5.5,
+		"contact": {
+			"email": "a@fpt.edu.vn",
+			"phone": "05876558965",
+			"address": "Can Tho"
+		},
+		"subjects": [
+			"WEB205",
+			"COM109"
+		]
+	},
+	{
+		"name": "Nguyen Thi B",
+		"gender": false,
+		"marks": 9.5,
+		"contact": {
+			"email": "b@fpt.edu.vn",
+			"phone": "0242343534",
+			"address": "Tien giang"
+		},
+		"subjects": [
+			"WEB204",
+			"COM108"
+		]
+	}
+]

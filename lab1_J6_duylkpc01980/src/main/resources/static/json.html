@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>hello</h1>
+	<script>
+		var sv = {
+			"name" : "Lê Khánh Duy",
+			"gender" : true,
+			"marks" : 7.5,
+			"contact" : {
+				"email" : "Duylkpc01980@fpt.edu.vn",
+				"phone" : "03543109384",
+				"address" : "Mỹ xuyên, Sóc Trăng"
+			},
+			"subjects" : ["WEB205","COM108"]
+		};
+		// xuất
+		console.log(sv);
+		// truy xuất
+		console.log("Truy Xuất ");
+		sv.name = sv['name'].toUpperCase();
+		console.log(sv.name, sv.contact.email, sv.marks, sv.subjects[1])
+		// duyệt qua key
+		console.log("Dòng lập ");
+		for(var key in sv){
+			console.log(key, sv[key])	}
+		// Chuyển đổi json sang string
+		console.log("JSON -> STRING ");
+		var text = JSON.stringify(sv);
+		console.log(text);
+		// chuyển đổi từ string qua json
+		console.log("STRING -> JSON ");
+		var object = JSON.parse(text);
+		console.log(object);
+		console.log(object.name)
+		</script>
+</body>
+
+</html>
