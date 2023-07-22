@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<table class="table align-middle mb-0 bg-white">
+		<thead class="bg-light">
+			<tr>
+				<th>Họ và Tên</th>
+				<th>Quốc Tịch</th>
+				<th>Giới Tính</th>
+				<th>Email</th>
+				<th>Điểm</th>
+				<th>Chỉnh Sữa</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="entry: ${items}" th:object="${entry.value}">
+				<td>
+					<div class="d-flex align-items-center">
+						<img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
+							style="width: 45px; height: 45px" class="rounded-circle" />
+						<div class="ms-3">
+							[[*{fullName}]]
+						</div>
+					</div>
+				</td>
+				<td>
+					[[*{country}]]
+				</td>
+				<td>
+					[[*{gender}?'Nam':'Nữ']]
+				</td>
+				<td>[[*{email}]]</td>
+				<td>[[*{marks}]]</td>
+				<td>
+					<a th:href="@{/student/edit/{key}(key=${entry.key})}"><button type="button"
+							class="btn btn-link btn-sm btn-rounded">
+							Sữa
+						</button></a>
+					<a th:href="@{/student/delete/{key}(key=${entry.key})}">
+						<button type="button" class="btn btn-link btn-sm btn-rounded">
+							Xoá
+						</button></a>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+
+</html>

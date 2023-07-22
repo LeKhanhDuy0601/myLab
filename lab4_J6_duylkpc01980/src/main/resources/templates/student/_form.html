@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html th:xmlns="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body class="container">
+	<p class="text-center"><b>Phiếu Điền Thông Tin Sinh Viên</b></p>
+	<form class="row g-3 needs-validation" method="post" th:object="${form}">
+		<div class="col-md-4">
+			<label for="email" class="form-label">Email</label>
+			<input class="form-control" id="email" value="duylkpc01980@fpt.edu.vn" th:field="*{email}">
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<div class="col-md-4">
+			<label for="fullname" class="form-label">Họ và tên</label>
+			<input type="text" class="form-control" id="fullname" value="Lê Khánh Duy" th:field="*{fullName}" required>
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<div class="col-md-4">
+			<label for="marks" class="form-label">Điểm</label>
+			<input type="text" class="form-control" id="marks" value="10" th:field="*{marks}" required>
+			<div class="valid-feedback">
+				Looks good!
+			</div>
+		</div>
+		<!--Radio -->
+
+		<label for="gender" class="form-label">Giới Tính</label>
+		<div class="form-check form-check-inline">
+			<input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked1"
+				th:field="*{gender}" value="true" required>
+			<label class="form-check-label" for="validationFormCheck2">Nam</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked2"
+				th:field="*{gender}" value="false" required>
+			<label class="form-check-label" for="validationFormCheck3">Nữ</label>
+		</div>
+		<div class="col-md-3">
+			<label for="validationCustom04" class="form-label">Quốc Tịch</label>
+			<select class="form-select" id="validationCustom04" th:field="*{country}" required>
+				<option selected disabled value="">Chọn Quốc Tịch</option>
+				<option value="VN">Việt Nam</option>
+				<option value="CN">Trung Quốc</option>
+			</select>
+			<div class="invalid-feedback">
+				Please select a valid state.
+			</div>
+		</div>
+		<button th:formaction="@{/student/create}" type="submit" class="btn btn-primary">Save</button>
+		<button th:formaction="@{|/student/update/${key}|}" type="submit" class="btn btn-info">Update</button>
+		<button th:formaction="@{|/student/delete/${key}|}" type="submit" class="btn btn-warning">Delete</button>
+		<button th:formaction="@{/student/index}" type="submit" class="btn btn-light">Reset</button>
+	</form>
+</body>
+
+</html>
