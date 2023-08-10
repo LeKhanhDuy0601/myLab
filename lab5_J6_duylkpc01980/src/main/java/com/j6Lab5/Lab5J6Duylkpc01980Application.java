@@ -1,0 +1,13 @@
+package com.j6Lab5;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Lab5J6Duylkpc01980Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Lab5J6Duylkpc01980Application.class, args);
+	}
+
+}
